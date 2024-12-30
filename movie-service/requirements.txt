@@ -1,4 +1,4 @@
 fastapi
 uvicorn[standard]
-SQLAlchemy
+SQLModel
 psycopg2-binary
