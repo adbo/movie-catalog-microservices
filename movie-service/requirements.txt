@@ -1,4 +1,5 @@
-fastapi
+fastapi[standard]
 uvicorn[standard]
 SQLModel
 psycopg2-binary
+pydantic-settings
