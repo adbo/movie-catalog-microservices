@@ -5,13 +5,13 @@ from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.sql.sqltypes import Unicode
 
 
-
 class MovieBase(SQLModel):
     title: str
     description: Optional[str] = None
     genre: str
     director: str
     actors: List[str] = Field(sa_column=Column(ARRAY(Unicode)))
+
 
 class Movie(MovieBase, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
